@@ -9,7 +9,8 @@ RUN apk add --no-cache build-base && \
     make && \
     make check && \
     make install && \
-    rm -rf /tmp/mecab-0.996 && \
     pip install mecab-python==0.996
 
 WORKDIR /
+
+RUN rm -rf /tmp/mecab-0.996
