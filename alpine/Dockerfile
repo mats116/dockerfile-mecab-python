@@ -11,5 +11,3 @@ RUN apk add --no-cache build-base && \
     cd / && \
     rm -rf /tmp/mecab-0.996 && \
     pip install mecab-python==0.996
-
-WORKDIR /
