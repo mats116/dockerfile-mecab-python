@@ -1,5 +1,7 @@
 FROM python:2.7.12
 
+LABEL maintainer "mats116 <mats.kazuki@gmail.com>"
+
 RUN apt-get update && \
     apt-get install -y mecab=0.996-1.1 \
                        libmecab-dev=0.996-1.1 \
