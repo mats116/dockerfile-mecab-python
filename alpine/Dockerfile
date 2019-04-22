@@ -1,4 +1,4 @@
-FROM python:2.7.12-alpine
+FROM python:3.7.3-alpine
 
 LABEL maintainer "mats116 <mats.kazuki@gmail.com>"
 
@@ -12,4 +12,4 @@ RUN apk add --no-cache build-base && \
         make install && \
     cd / && \
     rm -rf /tmp/mecab-0.996 && \
-    pip install mecab-python==0.996
+    pip install mecab-python3==0.7
