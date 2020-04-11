@@ -1,6 +1,6 @@
-FROM python:3.7.3
+FROM python:3.8.2
 
-LABEL maintainer "mats116 <mats.kazuki@gmail.com>"
+LABEL maintainer "mats16 <mats.kazuki@gmail.com>"
 
 RUN apt-get update && \
     apt-get install -y mecab=0.996-3.1 \
@@ -8,4 +8,4 @@ RUN apt-get update && \
                        mecab-ipadic-utf8 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    pip install mecab-python3==0.7
+    pip install mecab-python3==0.996.5
